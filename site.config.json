@@ -1,0 +1,29 @@
+{
+  "name": "ToolsKit",
+  "siteUrl": "https://toolskit.com",
+  "siteUrlConfirmed": false,
+  "urlStyle": "html",
+  "defaultLanguage": "en",
+  "languages": [
+    {
+      "code": "en",
+      "label": "English",
+      "enabled": true
+    }
+  ],
+  "contactEmail": "",
+  "operatorName": "",
+  "lastUpdated": "2026-10-05",
+  "analytics": {
+    "enabled": false,
+    "ga4": ""
+  },
+  "_notes": {
+    "siteUrl": "Single source for every canonical, Open Graph, sitemap and structured-data URL. Override at build time with the SITE_URL environment variable. 'toolskit.com' is the domain used by earlier versions; it is NOT confirmed as owned. Set siteUrlConfirmed to true once it is.",
+    "urlStyle": "'html' keeps the existing .html URLs. 'clean' drops .html (Vercel cleanUrls). Same pages, no duplicates: canonicals and redirects follow this setting.",
+    "contactEmail": "Leave empty until a real address exists. The Contact page then says so honestly instead of showing a fake form. Set it and rebuild to enable mailto links.",
+    "operatorName": "Name of the person or organisation operating the site, shown in the Privacy Policy and Terms. Leave empty until known; do not invent one.",
+    "languages": "Add a language only when its tools, errors and legal pages are fully translated. With more than one enabled language the header shows a language selector and pages emit hreflang."
+  },
+  "frameAncestors": "'none'"
+}

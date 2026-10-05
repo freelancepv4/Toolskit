@@ -1,0 +1,93 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "dist",
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools.html",
+      "destination": "/tools/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/index.html",
+      "destination": "/tools/",
+      "permanent": true
+    },
+    {
+      "source": "/pdf-tools/index.html",
+      "destination": "/pdf-tools/",
+      "permanent": true
+    },
+    {
+      "source": "/image-tools/index.html",
+      "destination": "/image-tools/",
+      "permanent": true
+    },
+    {
+      "source": "/qr-tools/index.html",
+      "destination": "/qr-tools/",
+      "permanent": true
+    },
+    {
+      "source": "/unit-converter/index.html",
+      "destination": "/unit-converter/",
+      "permanent": true
+    },
+    {
+      "source": "/calculators/index.html",
+      "destination": "/calculators/",
+      "permanent": true
+    },
+    {
+      "source": "/cv-builder/index.html",
+      "destination": "/cv-builder/",
+      "permanent": true
+    },
+    {
+      "source": "/social-media-tools/index.html",
+      "destination": "/social-media-tools/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
